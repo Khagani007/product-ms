@@ -8,6 +8,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -20,7 +22,7 @@ public class ProductDto {
 
     @NotNull(message = "Price is required")
     @Min(value = 0, message = "Price must be a positive number")
-    private double price;
+    private BigDecimal price;
 
     @NotNull(message = "Product count is required")
     @Min(value = 0, message = "Count must be a positive number")

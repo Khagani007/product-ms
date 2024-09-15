@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -18,8 +20,8 @@ public class ProductEntity {
     private Long id;
     @Column(nullable = false)
     private String name;
-    @Column(nullable = false)
-    private double price;
+    @Column(name = "price", columnDefinition = "NUMERIC", nullable = false)
+    private BigDecimal price;
     @Column(nullable = false)
     private int count;
 }

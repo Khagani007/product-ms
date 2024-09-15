@@ -4,11 +4,11 @@ databaseChangeLog:
       author: Khagani Mammadli
       changes:
         - createTable:
-            tableName: product
+            tableName: products
             columns:
               - column:
                   name: id
-                  type: BIG-SERIAL
+                  type: BIGINT
                   constraints:
                     primaryKey: true
               - column:
