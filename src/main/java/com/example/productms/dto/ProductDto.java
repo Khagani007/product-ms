@@ -26,5 +26,5 @@ public class ProductDto {
 
     @NotNull(message = "Product count is required")
     @Min(value = 0, message = "Count must be a positive number")
-    private int count;
+    private Integer count;
 }

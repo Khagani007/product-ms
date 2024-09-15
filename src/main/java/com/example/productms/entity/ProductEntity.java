@@ -23,5 +23,5 @@ public class ProductEntity {
     @Column(name = "price", columnDefinition = "NUMERIC", nullable = false)
     private BigDecimal price;
     @Column(nullable = false)
-    private int count;
+    private Integer count;
 }
