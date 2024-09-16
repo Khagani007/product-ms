@@ -11,12 +11,19 @@ databaseChangeLog:
                   type: BIGINT
                   constraints:
                     primaryKey: true
+                    nullable: false
               - column:
                   name: name
                   type: VARCHAR(255)
+                  constraints:
+                    nullable: false
               - column:
                   name: price
                   type: NUMERIC(19, 2)
+                  constraints:
+                    nullable: false
               - column:
                   name: count
                   type: INT
+                  constraints:
+                    nullable: false
